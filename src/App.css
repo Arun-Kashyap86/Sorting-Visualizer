@@ -1,0 +1,162 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.app {
+  height: 100vh;
+  padding: 20px;
+  padding-bottom: 20px;
+  padding-top: 10px;
+  transition: 0.3s;
+}
+
+.dark{
+  background: #23253021;
+  color: white;
+
+}
+
+.light {
+  background: #6388ad99;
+  color: black;
+}
+
+h1 {
+  text-align: center;
+  display: block;
+  margin-bottom: 40px;
+  color: rgb(255, 255, 255);
+  /* border-bottom: 4px white solid; */
+  line-height: 40px;
+  padding-bottom: 10px;
+  background-color: rgb(0, 0, 0);
+  border-bottom: 4px solid #6d1470;
+  border-top: 4px solid #6d1470;
+  border-radius: 30px;
+  padding-top: 10px;
+}
+
+.controls {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.controls button,
+.controls select,
+.input-box button {
+  padding: 10px 15px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+}
+.controls select{
+  background: white;
+  color: black;
+
+}
+
+button {
+  background: #58be87;
+  font-size: 14px;
+  color: white;
+  transition: transform 0.3s ease;
+}
+button:hover{
+  transform: scale(1.03);
+}
+.dark button {
+  background: #1b6e41;
+}
+.light button {
+  color: black;
+}
+
+.input-box {
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+.light .input-box input{
+  background-color: white;
+  color: black;
+  
+}
+.dark .input-box input{
+  background-color: rgb(24, 24, 24);
+  
+}
+.dark .controls select{
+  background-color: rgb(202, 201, 201);
+  
+}
+.input-box input {
+  width: 350px;
+  padding: 10px;
+  border-radius: 8px;
+}
+
+.speed {
+  margin-top: 20px;
+  text-align: center;
+  color: white;
+  align-items: stretch;
+}
+
+
+.array-container {
+  margin-top: 30px;
+  height: 420px;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  gap: 4px;
+  overflow-x: auto;
+  width: 80%;
+  margin: 30px auto;
+  padding-bottom: 20px;
+}
+
+
+.bar {
+  width: 25px;
+  background: #242e40;
+  border-radius: 6px 6px 0 0;
+  position: relative;
+  transition: height 0.2s ease;;
+  display: flex;
+  justify-content: center;
+} 
+.dark .bar{
+  background-color: #586f99;
+}
+.bar span {
+  position: absolute;
+  top: -20px;
+  width: 100%;
+  text-align: center;
+  color: 242e40;
+  font-size: 12px;
+}
+
+.active {
+  background: #ba2222 !important;
+}
+
+.sorted {
+  background: #12a548 !important;
+}
+
+.dark .array-container {
+  background: #293143;
+  border-radius: 12px;
+}
+
+.light .array-container {
+  background: rgb(99, 136, 173);
+  border-radius: 12px;
+}
